@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=a, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="icon"
+      href="data:image/png;base64,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"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Stripe | Payment</title>
+  </head>
+  <body>
+    <header
+      class="text-white geeks1 relative flex justify-center md:h-30r h-72 pt-4 bg-red-200"
+    >
+      <section class="md:hidden">
+        <h1 class="font-bold text-2xl">
+          <a href="index.html">stripe</a>
+        </h1>
+      </section>
+      <section class="h-fit md:flex hidden justify-between w-5/6">
+        <h1 class="font-bold text-2xl">
+          <a href="index.html">stripe</a>
+        </h1>
+        <nav class="flex justify-between h-fit w-30r font-semibold">
+          <a class="hover:skew-y-2 hover:text-grayd1" href="#">Products</a>
+          <a class="hover:skew-y-2 hover:text-grayd1" href="#">Solutions</a>
+          <a class="hover:skew-y-2 hover:text-grayd1" href="#">Developers</a>
+          <a class="hover:skew-y-2 hover:text-grayd1" href="#">Resources</a>
+          <a class="hover:skew-y-2 hover:text-grayd1" href="#">Pricing</a>
+        </nav>
+        <button
+          class="h-fit font-semibold pb-1 px-2 rounded-2xl bg-graybe hover:bg-grayff"
+        >
+          Sign in >
+        </button>
+      </section>
+    </header>
+
+    <section>
+      <section class="flex absolute top-32 justify-between w-full md:pl-0 pl-4">
+        <div class="md:w-[55%] md:pl-20 md:pt-28">
+          <h1 class="md:text-4r text-5xl font-bold md:leading-5r">
+            Financial infrastructure for the internet
+          </h1>
+          <p class="w-11/12 mt-8 mb-8 text-xl">
+            Millions of companies of all sizes—from startups to Fortune 500s—use
+            Stripe’s software and APIs to accept payments, send payouts, and
+            manage their businesses online.
+          </p>
+          <div>
+            <button
+              class="h-fit font-semibold pb-1 px-3 text-white rounded-2xl bg-blue0a hover:bg-blue0e2"
+            >
+              Start now >
+            </button>
+            <button
+              class="h-fit font-semibold pb-1 px-2 text-blue0a hover:text-blue0e2"
+            >
+              Contact sales >
+            </button>
+          </div>
+        </div>
+        <div
+          class="opacity bg-grayf69 bg-opacity-75 border-b-2 md:flex hidden w-fit gap-0 pt-6 pl-6 pb-8"
+        >
+          <div class="flex">
+            <svg class="mt-0.5 mr-2" width="20" height="20" viewBox="0 0 20 20">
+              <path
+                fill="#FFF"
+                d="M10 0a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm3.3 6.11H4.34a.41.41 0 0 0 0 .83h8.94a2.89 2.89 0 0 1 0 5.77H7.65a.41.41 0 0 0 0 .83h5.64a3.71 3.71 0 0 0 0-7.43zm0 1.65a2.06 2.06 0 1 0 2.05 2.06c0-1.13-.92-2.06-2.06-2.06zm-2.83 3.3h-4.7a.41.41 0 0 0 0 .83h4.7a.41.41 0 0 0 0-.83zM13.3 8.6a1.24 1.24 0 1 1 0 2.47 1.24 1.24 0 0 1 0-2.47zm-3.3.8H3.41a.41.41 0 1 0 0 .83h6.6c.22 0 .4-.19.4-.42a.41.41 0 0 0-.41-.4zm.47-1.65H6.24a.41.41 0 1 0 0 .83h4.23a.41.41 0 1 0 0-.83z"
+              ></path>
+            </svg>
+            <h2 class="flex text-white mt-1 font-bold text-xs w-32">
+              ROCKER RIDES
+              <span class="h-fit mt-1 ml-2">
+                <svg
+                  class="font-bold"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 4"
+                >
+                  <polyline
+                    fill="none"
+                    stroke="#FFF"
+                    points="1 0 5 4 9 0"
+                  ></polyline>
+                </svg>
+              </span>
+            </h2>
+          </div>
+          <div class="flex flex-col gap-4">
+            <form
+              class="border relative rounded-l w-42 flex bg-white ml-8 px-2"
+              action="search"
+            >
+              <svg class="mt-0.5" width="12" height="15" viewBox="0 0 10 10">
+                <circle
+                  cx="4"
+                  cy="4"
+                  r="3.5"
+                  fill="none"
+                  stroke="#62788D"
+                ></circle>
+                <path
+                  fill="#62788D"
+                  d="M6.15 6.15c.2-.2.5-.2.7 0l2.12 2.12a.5.5 0 1 1-.7.7L6.15 6.85a.5.5 0 0 1 0-.7z"
+                ></path>
+              </svg>
+              <input
+                class="outline-none w-32 absolute left-6 pl-3 placeholder:text-xs pb-1 top-px h-4"
+                type="search"
+                placeholder="search"
+              />
+            </form>
+            <div class="mt-2 ml-8 w-fit flex flex-col gap-6">
+              <img
+                class="w-56 border shadow-md rounded-l-md"
+                src="./images/image2.png"
+                alt="chart"
+              />
+              <img
+                class="w-56 border shadow-md rounded-l-md"
+                src="./images/image2.png"
+                alt="chart"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="absolute right-64 top-20">
+          <img
+            class="border-8 shadow-2xl rounded-1r w-[18rem]"
+            src="./images/image1.png"
+            alt="bank image"
+          />
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
